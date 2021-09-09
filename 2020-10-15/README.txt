@@ -1,0 +1,1 @@
+in 0100-traffic-light viene creato unn primo ambiente di testing. Questo é un semaforo che cambia stato ogni 2 secondi ciclando verde giallo e rosso. il codice da considerare é nei file next.mo, system.mo, type.mo

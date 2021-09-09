@@ -1,0 +1,15 @@
+loadModel(Modelica);
+getErrorString();
+
+loadFile("next.mo");
+getErrorString();
+
+loadFile("system.mo");
+getErrorString();
+
+simulate(System, stopTime=10);
+getErrorString();
+
+plot({x, u}, externalWindow=true);
+getErrorString();
+

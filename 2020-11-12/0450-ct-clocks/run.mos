@@ -1,0 +1,21 @@
+
+loadModel(Modelica);
+getErrorString();
+
+loadFile("../../MLibrary/package.mo");
+getErrorString();
+
+loadFile("system.mo");
+getErrorString();
+
+simulate(System, stopTime=10);
+getErrorString();
+
+//plot({fifo.x}, externalWindow=true);
+//getErrorString();
+
+//plot({fifo.u}, externalWindow=true);
+//getErrorString();
+
+plot({x, y, z, w, td}, externalWindow=true);
+getErrorString();

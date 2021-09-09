@@ -1,0 +1,9 @@
+y[12] = 1.0: FAIL with ArrivalDelay = 4.0
+y[40] = 1.0: FAIL with ArrivalDelay = 19.7
+y[42] = 1.0: FAIL with ArrivalDelay = 5.6
+y[47] = 1.0: FAIL with ArrivalDelay = 5.8
+y[48] = 1.0: FAIL with ArrivalDelay = 5.7
+y[52] = 1.0: FAIL with ArrivalDelay = 4.2
+y[53] = 1.0: FAIL with ArrivalDelay = 5.3
+y[84] = 1.0: FAIL with ArrivalDelay = 5.3
+y[95] = 1.0: FAIL with ArrivalDelay = 4.7

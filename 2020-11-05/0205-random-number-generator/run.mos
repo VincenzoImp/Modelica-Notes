@@ -1,0 +1,13 @@
+loadModel(Modelica);
+getErrorString();
+
+
+loadFile("system.mo");
+getErrorString();
+
+simulate(GenerateRandomNumbers, stopTime=100);
+getErrorString();
+
+plot({r1024}, externalWindow=true);
+getErrorString();
+

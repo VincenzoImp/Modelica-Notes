@@ -1,0 +1,7 @@
+
+
+plot({x[1], x[2]}, externalWindow=true, fileName="System_res.mat");
+getErrorString();
+
+plotParametric(x[1], x[2], externalWindow=true, fileName="System_res.mat");
+getErrorString();

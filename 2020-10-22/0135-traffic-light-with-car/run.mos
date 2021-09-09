@@ -1,0 +1,21 @@
+loadModel(Modelica);
+getErrorString();
+
+loadFile("types.mo");
+getErrorString();
+
+loadFile("traffic-light.mo");
+getErrorString();
+
+loadFile("car.mo");
+getErrorString();
+
+loadFile("system.mo");
+getErrorString();
+
+simulate(System, stopTime=50);
+getErrorString();
+
+plot({p.x, q.u, q.x}, externalWindow=true);
+getErrorString();
+

@@ -1,0 +1,9 @@
+0120-traffic-light-as-block é un semaforo piú complesso di quello della lezione precedente, e sará il nostro ambiente di simulazione
+
+0135-traffic-light-with-car é un ambiente di testing con il semaforo descritto in 0120-traffic-light-as-block é con una macchina che esegue gli ordini del driver. della macchina sappiamo quando si trova davanti all'incrocio con il semaforo, quando lo attraversa, e quando lo ha finito di attravesare. il driver spinge solo sull'accelleratore e non teme la morte
+
+0140-traffic-light-with-ctr prende la car e il semaforo descritti in 0135-traffic-light-with-car sostituisce il driver incoscente con un controllore che fa go sul verde e sul giallo e stop sul rosso (questo succede sempre, anche quando la car é distante chilometri oppure ha gia superato lincrocio). il controllore quindi é piú responsabile ma un po' tonto perché si ferma anche buffo. si potrebbe anche fermare in mezzo all'incrocio invece di completare l'attraversamento perché é scattato il rosso nel mentre. OSS: si intuisce che questo controllore possa sbagliare in alcuni casi
+
+0150-traffic-light-with-monitor prende tutta l'infrastruttura descritta in 0140-traffic-light-with-ctr e crea un monitor per controllare se il controllore ha commesso degli errori o meno. ora mancherebbe solo un esecutore di vari test per controllare il piu possibile se il sistema che abbiamo creato (il controllre) lavora senza errori nell'ambiente di testing (ovvero la macchina e il semaforo) 
+
+dobbiamo eseguire infiniti test variando la variabile ArrivalDelay definita in car. cosí facento si fanno infinite prove con la macchina che parte da infiniti punti diversi, e quindi infinite casisteche. questo si fa con uno script in python

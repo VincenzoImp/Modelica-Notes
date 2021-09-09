@@ -1,0 +1,1 @@
+usa il file clean.sh per pulire tutti i file inutili risalenti a passate esecuzioni
